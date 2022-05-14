@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa7c1ba2-25dd-41d1-a439-f4a26743f024" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/home/filipe/Documents/Filipe/Projects/order-microservice/product/src/main/resources"
+    "last_opened_file_path": "/home/filipe/Documents/Filipe/Projects/order-microservice/product/src/main/java/com/simpledev/product"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -49,6 +47,7 @@
       <recent name="com.simpledev.user.protocols" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/product/src/main/java/com/simpledev/product" />
       <recent name="$PROJECT_DIR$/product/src/main/resources" />
     </key>
   </component>
