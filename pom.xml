@@ -9,6 +9,7 @@
     <name>order-microservice</name>
     <modules>
         <module>user</module>
+        <module>product</module>
     </modules>
     <packaging>pom</packaging>
     <version>1.0.0</version>
