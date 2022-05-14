@@ -11,6 +11,7 @@
         <module>user</module>
         <module>product</module>
         <module>api-gateway</module>
+        <module>discovery-service</module>
     </modules>
     <packaging>pom</packaging>
     <version>1.0.0</version>
