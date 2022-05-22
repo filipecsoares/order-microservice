@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fa7c1ba2-25dd-41d1-a439-f4a26743f024" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/enums/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/enums/OrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/model/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +17,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,51 +38,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/filipe/Documents/Filipe/Projects/order-microservice/product/src/main/java/com/simpledev/product&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "/home/filipe/Documents/Filipe/Projects/order-microservice/product/src/main/java/com/simpledev/product"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.simpledev.order.codec" />
+      <recent name="com.simpledev.order.repository" />
+      <recent name="com.simpledev.order.service" />
+      <recent name="com.simpledev.order.protocols" />
       <recent name="com.simpledev.order.model" />
-      <recent name="com.simpledev.user.protocols" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/product/src/main/java/com/simpledev/product" />
       <recent name="$PROJECT_DIR$/product/src/main/resources" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.simpledev.order.controller" />
+      <recent name="com.simpledev.order.service" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.UserApplication">
-    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.simpledev.apigateway.ApiGatewayApplication" />
-      <module name="api-gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.simpledev.apigateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiscoveryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.simpledev.discoveryservice.DiscoveryServiceApplication" />
-      <module name="discovery-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.simpledev.discoveryservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.OrderControllerTest.shouldReturnCreatedStatusOnPostRequest">
     <configuration name="ProductApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.simpledev.product.ProductApplication" />
       <module name="product" />
@@ -106,12 +95,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderControllerTest.shouldReturnCreatedStatusOnPostRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simpledev.order.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.simpledev.order.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.simpledev.order.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnCreatedStatusOnPostRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceImplTest.shoudSaveAnValidOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simpledev.order.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.simpledev.order.service" />
+      <option name="MAIN_CLASS_NAME" value="com.simpledev.order.service.OrderServiceImplTest" />
+      <option name="METHOD_NAME" value="shoudSaveAnValidOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceImplTest.shouldSaveAnValidOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simpledev.order.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.simpledev.order.service" />
+      <option name="MAIN_CLASS_NAME" value="com.simpledev.order.service.OrderServiceImplTest" />
+      <option name="METHOD_NAME" value="shouldSaveAnValidOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderControllerTest.shouldReturnCreatedStatusOnPostRequest" />
+        <item itemvalue="JUnit.OrderServiceImplTest.shouldSaveAnValidOrder" />
+        <item itemvalue="JUnit.OrderServiceImplTest.shoudSaveAnValidOrder" />
         <item itemvalue="Application.UserApplication" />
         <item itemvalue="Application.ProductApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.DiscoveryServiceApplication" />
       </list>
     </recent_temporary>
   </component>

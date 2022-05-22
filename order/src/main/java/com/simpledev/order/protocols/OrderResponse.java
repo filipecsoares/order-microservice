@@ -1,4 +1,4 @@
-package com.simpledev.order.model;
+package com.simpledev.order.protocols;
 
 import com.simpledev.order.enums.OrderStatus;
 import lombok.AllArgsConstructor;
@@ -6,24 +6,19 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
-@Table(name = "order_tbl")
-@Entity
-public class Order {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class OrderResponse {
     private Long id;
-    private Long userId;
     private BigDecimal total;
-    private LocalDateTime createdAt;
-    @Enumerated
     private OrderStatus status;
+    private List<ProductResponse> products;
+    private UserResponse user;
+    private LocalDateTime createdAt;
 }
