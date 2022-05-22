@@ -12,6 +12,7 @@
         <module>product</module>
         <module>api-gateway</module>
         <module>discovery-service</module>
+        <module>order</module>
     </modules>
     <packaging>pom</packaging>
     <version>1.0.0</version>
