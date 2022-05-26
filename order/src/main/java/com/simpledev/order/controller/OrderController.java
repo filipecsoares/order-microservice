@@ -21,7 +21,7 @@ public class OrderController {
     private final OrderService orderService;
 
     @PostMapping
-    public ResponseEntity<OrderResponse> save(@RequestBody Order order) {
+    public ResponseEntity<OrderResponse> save(@RequestBody OrderRequest order) {
         return new ResponseEntity<>(Codec.toResponse(orderService.save(order)), HttpStatus.CREATED);
     }
 }

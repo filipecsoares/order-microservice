@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,8 +20,8 @@ public class Item {
     private Long id;
     private Integer quantity;
     private Long productId;
+    private BigDecimal price;
     @ManyToOne
     @JoinColumn(nullable = false)
     private Order order;
-
 }

@@ -3,6 +3,7 @@ package com.simpledev.order.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.simpledev.order.enums.OrderStatus;
 import com.simpledev.order.model.Order;
+import com.simpledev.order.protocols.OrderRequest;
 import com.simpledev.order.service.OrderService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -45,10 +46,10 @@ class OrderControllerTest {
     public void shouldReturnCreatedStatusOnPostRequest() throws Exception {
         LocalDateTime createdAt = LocalDateTime.now();
         Order validOrder = new Order();
-        Order returnedOrder = Order.builder().id(1L).status(OrderStatus.OPENED).createdAt(createdAt).build();
-        when(service.save(any(Order.class))).thenReturn(returnedOrder);
+        Order returnedOrder = Order.builder().id(1L).status(OrderStatus.PENDING).createdAt(createdAt).build();
+        when(service.save(any(OrderRequest.class))).thenReturn(returnedOrder);
         mockMvc.perform(post("/api/v1/orders").contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(validOrder))).andExpect(status().isCreated());
-        verify(service, times(1)).save(any(Order.class));
+        verify(service, times(1)).save(any(OrderRequest.class));
     }
 }

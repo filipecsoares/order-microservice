@@ -1,5 +1,5 @@
 package com.simpledev.order.enums;
 
 public enum OrderStatus {
-    CANCELED, APPROVED, OPENED, FINISHED
+    CANCELED, APPROVED, PENDING, FINISHED
 }
