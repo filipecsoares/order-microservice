@@ -1,9 +1,11 @@
 package com.simpledev.order.service;
 
+import com.simpledev.order.codec.Codec;
 import com.simpledev.order.enums.OrderStatus;
 import com.simpledev.order.model.Item;
 import com.simpledev.order.model.Order;
 import com.simpledev.order.protocols.OrderRequest;
+import com.simpledev.order.protocols.OrderResponse;
 import com.simpledev.order.protocols.ProductRequest;
 import com.simpledev.order.repository.ItemRepository;
 import com.simpledev.order.repository.OrderRepository;
@@ -13,6 +15,7 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Service
@@ -21,6 +24,8 @@ public class OrderServiceImpl implements OrderService {
     private final OrderRepository orderRepository;
 
     private final ItemRepository itemRepository;
+
+    private final ProductFeignClient productFeignClient;
 
     @Override
     @Transactional
@@ -36,5 +41,15 @@ public class OrderServiceImpl implements OrderService {
             itemRepository.save(item);
         });
         return order;
+    }
+
+    @Override
+    public OrderResponse getById(Long orderId) {
+        var order = orderRepository.getById(orderId);
+        var items = itemRepository.findByOrderId(orderId);
+        var products = items.stream().map(item -> productFeignClient.getProductById(item.getProductId())).collect(Collectors.toList());
+        var orderResponse = Codec.toResponse(order);
+        orderResponse.setProducts(products);
+        return orderResponse;
     }
 }

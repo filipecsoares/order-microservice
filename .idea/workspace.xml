@@ -6,14 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="fa7c1ba2-25dd-41d1-a439-f4a26743f024" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/OrderApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/enums/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/enums/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/protocols/ProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/protocols/ProductRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/protocols/ProductResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/protocols/ProductResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/repository/ItemRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/service/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/test/java/com/simpledev/order/controller/OrderControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/test/java/com/simpledev/order/controller/OrderControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/test/java/com/simpledev/order/service/OrderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/test/java/com/simpledev/order/service/OrderServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/simpledev/product/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/simpledev/product/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/simpledev/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/simpledev/product/repository/ProductRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -4,7 +4,9 @@ import com.simpledev.order.enums.OrderStatus;
 import com.simpledev.order.model.Item;
 import com.simpledev.order.model.Order;
 import com.simpledev.order.protocols.OrderRequest;
+import com.simpledev.order.protocols.OrderResponse;
 import com.simpledev.order.protocols.ProductRequest;
+import com.simpledev.order.protocols.ProductResponse;
 import com.simpledev.order.repository.ItemRepository;
 import com.simpledev.order.repository.OrderRepository;
 import org.junit.jupiter.api.BeforeAll;
@@ -53,7 +55,7 @@ class OrderServiceImplTest {
         assertEquals(BigDecimal.valueOf(20.0), createdOrder.getTotal());
     }
 
-    @Test()
+    @Test
     public void shouldNotSaveAnOrderWithoutUser() {
         var userId = 1L;
         var product = ProductRequest.builder().quantity(1).id(1L).price(BigDecimal.valueOf(20.0)).build();

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @AllArgsConstructor
 @RestController
 @RequestMapping("/api/v1/products")
-public class UserController {
+public class ProductController {
 
     private final ProductService productService;
 
@@ -33,12 +33,12 @@ public class UserController {
     }
 
     @GetMapping("/{name}")
-    public ResponseEntity<ProductResponse> findByEmail(@PathVariable String name) {
+    public ResponseEntity<ProductResponse> findByName(@PathVariable String name) {
         return new ResponseEntity<>(Codec.toResponse(productService.findByName(name)), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<ProductResponse> findByEmail(@PathVariable Long id) {
+    public ResponseEntity<ProductResponse> findById(@PathVariable Long id) {
         return new ResponseEntity<>(Codec.toResponse(productService.findById(id)), HttpStatus.OK);
     }
 }
