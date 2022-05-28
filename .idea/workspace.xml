@@ -6,16 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fa7c1ba2-25dd-41d1-a439-f4a26743f024" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/OrderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/protocols/ProductResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/protocols/ProductResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/repository/ItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/service/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/test/java/com/simpledev/order/service/OrderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/test/java/com/simpledev/order/service/OrderServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/simpledev/product/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/simpledev/product/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/service/ProductFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/simpledev/order/service/ProductFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/src/main/java/com/simpledev/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/simpledev/product/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +21,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -72,83 +67,83 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.simpledev.user.domain.entity" />
       <recent name="com.simpledev.order.controller" />
       <recent name="com.simpledev.order.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderServiceImplTest.shouldNotSaveAnOrderWithoutUser">
-    <configuration name="UserApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.simpledev.user.UserApplication" />
+  <component name="RunManager" selected="JUnit.CpfTest">
+    <configuration name="OrderApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.simpledev.order.OrderApplication" />
+      <module name="order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simpledev.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CpfTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.simpledev.user.*" />
+          <option name="PATTERN" value="com.simpledev.user.domain.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.simpledev.user.domain.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.simpledev.user.domain.entity.CpfTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderControllerTest.shouldReturnCreatedStatusOnPostRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="order" />
+    <configuration name="CpfTest.shouldCreateAValidCpf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.simpledev.order.controller.*" />
+          <option name="PATTERN" value="com.simpledev.user.domain.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.simpledev.order.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.simpledev.order.controller.OrderControllerTest" />
-      <option name="METHOD_NAME" value="shouldReturnCreatedStatusOnPostRequest" />
+      <option name="PACKAGE_NAME" value="com.simpledev.user.domain.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.simpledev.user.domain.entity.CpfTest" />
+      <option name="METHOD_NAME" value="shouldCreateAValidCpf" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceImplTest.shoudSaveAnValidOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="order" />
+    <configuration name="CpfTest.shouldThrowIfCpfWithEqualDigits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.simpledev.order.service.*" />
+          <option name="PATTERN" value="com.simpledev.user.domain.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.simpledev.order.service" />
-      <option name="MAIN_CLASS_NAME" value="com.simpledev.order.service.OrderServiceImplTest" />
-      <option name="METHOD_NAME" value="shoudSaveAnValidOrder" />
+      <option name="PACKAGE_NAME" value="com.simpledev.user.domain.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.simpledev.user.domain.entity.CpfTest" />
+      <option name="METHOD_NAME" value="shouldThrowIfCpfWithEqualDigits" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceImplTest.shouldNotSaveAnOrderWithoutUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="order" />
+    <configuration name="CpfTest.shouldThrowIfInvalidCpfWithDifferentDigits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.simpledev.order.service.*" />
+          <option name="PATTERN" value="com.simpledev.user.domain.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.simpledev.order.service" />
-      <option name="MAIN_CLASS_NAME" value="com.simpledev.order.service.OrderServiceImplTest" />
-      <option name="METHOD_NAME" value="shouldNotSaveAnOrderWithoutUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderServiceImplTest.shouldSaveAnValidOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="order" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.simpledev.order.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.simpledev.order.service" />
-      <option name="MAIN_CLASS_NAME" value="com.simpledev.order.service.OrderServiceImplTest" />
-      <option name="METHOD_NAME" value="shouldSaveAnValidOrder" />
+      <option name="PACKAGE_NAME" value="com.simpledev.user.domain.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.simpledev.user.domain.entity.CpfTest" />
+      <option name="METHOD_NAME" value="shouldThrowIfInvalidCpfWithDifferentDigits" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderServiceImplTest.shouldNotSaveAnOrderWithoutUser" />
-        <item itemvalue="JUnit.OrderServiceImplTest.shouldSaveAnValidOrder" />
-        <item itemvalue="JUnit.OrderControllerTest.shouldReturnCreatedStatusOnPostRequest" />
-        <item itemvalue="JUnit.OrderServiceImplTest.shoudSaveAnValidOrder" />
-        <item itemvalue="Application.UserApplication" />
+        <item itemvalue="JUnit.CpfTest" />
+        <item itemvalue="JUnit.CpfTest.shouldThrowIfInvalidCpfWithDifferentDigits" />
+        <item itemvalue="JUnit.CpfTest.shouldThrowIfCpfWithEqualDigits" />
+        <item itemvalue="JUnit.CpfTest.shouldCreateAValidCpf" />
+        <item itemvalue="Application.OrderApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -185,5 +180,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user/src/main/java/com/simpledev/user/domain/entity/Cpf.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user/src/main/java/com/simpledev/user/domain/entity/Cpf.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

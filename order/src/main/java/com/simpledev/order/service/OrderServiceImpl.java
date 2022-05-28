@@ -47,7 +47,7 @@ public class OrderServiceImpl implements OrderService {
     public OrderResponse getById(Long orderId) {
         var order = orderRepository.getById(orderId);
         var items = itemRepository.findByOrderId(orderId);
-        var products = items.stream().map(item -> productFeignClient.getProductById(item.getProductId())).collect(Collectors.toList());
+        var products = items.stream().map(item -> productFeignClient.getProductById(item.getProductId()).getBody()).collect(Collectors.toList());
         var orderResponse = Codec.toResponse(order);
         orderResponse.setProducts(products);
         return orderResponse;
