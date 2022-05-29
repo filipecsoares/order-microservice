@@ -1,17 +1,17 @@
 package com.simpledev.user.service;
 
-import com.simpledev.user.model.User;
+import com.simpledev.user.model.UserEntity;
 
 import java.util.List;
 
 public interface UserService {
-    public User save(User user);
+    public UserEntity save(UserEntity user);
 
-    public User update(Long id, User user);
+    public UserEntity update(Long id, UserEntity user);
 
-    public List<User> findAll();
+    public List<UserEntity> findAll();
 
-    public User findById(Long id);
+    public UserEntity findById(Long id);
 
-    public User findByEmail(String email);
+    public UserEntity findByEmail(String email);
 }

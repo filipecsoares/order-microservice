@@ -1,6 +1,6 @@
 package com.simpledev.user;
 
-import com.simpledev.user.model.User;
+import com.simpledev.user.model.UserEntity;
 import com.simpledev.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.SpringApplication;
@@ -22,8 +22,8 @@ public class UserApplication {
     @PostConstruct
     public void populateUser() {
         var users = Arrays.asList(
-                User.builder().email("test1@test.com").name("Test 1").password("1234").build(),
-                User.builder().email("test2@test.com").name("Test 2").password("1234").build());
+                UserEntity.builder().email("test1@test.com").name("Test 1").password("1234").build(),
+                UserEntity.builder().email("test2@test.com").name("Test 2").password("1234").build());
         users.forEach(userRepository::save);
     }
 }

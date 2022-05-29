@@ -1,7 +1,7 @@
 package com.simpledev.user.controller;
 
 import com.simpledev.user.codec.Codec;
-import com.simpledev.user.model.User;
+import com.simpledev.user.model.UserEntity;
 import com.simpledev.user.protocols.UserResponse;
 import com.simpledev.user.protocols.UsersResponse;
 import com.simpledev.user.service.UserService;
@@ -18,12 +18,12 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping
-    public ResponseEntity<UserResponse> save(@RequestBody User user) {
+    public ResponseEntity<UserResponse> save(@RequestBody UserEntity user) {
         return new ResponseEntity<>(Codec.toResponse(userService.save(user)), HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<UserResponse> update(@PathVariable Long id, @RequestBody User user) {
+    public ResponseEntity<UserResponse> update(@PathVariable Long id, @RequestBody UserEntity user) {
         return new ResponseEntity<>(Codec.toResponse(userService.update(id, user)), HttpStatus.OK);
     }
 

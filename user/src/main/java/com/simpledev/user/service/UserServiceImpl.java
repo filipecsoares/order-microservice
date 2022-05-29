@@ -1,6 +1,6 @@
 package com.simpledev.user.service;
 
-import com.simpledev.user.model.User;
+import com.simpledev.user.model.UserEntity;
 import com.simpledev.user.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -15,12 +15,12 @@ public class UserServiceImpl implements UserService{
     private final UserRepository userRepository;
 
     @Override
-    public User save(User user) {
+    public UserEntity save(UserEntity user) {
         return userRepository.save(user);
     }
 
     @Override
-    public User update(Long id, User user) {
+    public UserEntity update(Long id, UserEntity user) {
         var foundUser = userRepository.findById(id);
         if(!foundUser.isPresent()) {
             throw new IllegalArgumentException("User not exists!");
@@ -29,17 +29,17 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public List<User> findAll() {
+    public List<UserEntity> findAll() {
         return userRepository.findAll();
     }
 
     @Override
-    public User findById(Long id) {
+    public UserEntity findById(Long id) {
         return userRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("User not found!"));
     }
 
     @Override
-    public User findByEmail(String email) {
+    public UserEntity findByEmail(String email) {
         return userRepository.findByEmail(email).orElseThrow(() -> new EntityNotFoundException("User not found!"));
     }
 }
