@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa7c1ba2-25dd-41d1-a439-f4a26743f024" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/codec/Codec.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/codec/Codec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/domain/entity/UserDomain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/model/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/simpledev/user/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
